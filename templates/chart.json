@@ -1,0 +1,48 @@
+{
+    "_comment" : "MySSD-Reader myxxxsquared https://github.com/myxxxsquared/myssd-python GPLv3 License",
+
+    "type" : "line",
+    "data" : {
+        "datasets" : [{
+            "fill" : false,
+            "borderColor" : "rgb(255, 152, 0)",
+            "backgroundColor" : "rgb(255, 152, 0)",
+            "data" : [
+                {{ data }}
+            ]
+        }]
+    },
+    "options" : {
+        "title" : {
+            "display" : true,
+            "text" : "写入量"
+        },
+        "scales" : {
+            "xAxes" : [{
+                "type" : "time",
+                "time" : {
+                    "displayFormats" : {
+                        "year" : "YYYY-MM-DD HH:mm",
+                        "quarter" : "YYYY-MM-DD HH:mm",
+                        "month" : "YYYY-MM-DD HH:mm",
+                        "week" : "YYYY-MM-DD HH:mm",
+                        "day" : "YYYY-MM-DD HH:mm",
+                        "hour" : "YYYY-MM-DD HH:mm",
+                        "minute" : "YYYY-MM-DD HH:mm:ss",
+                        "second" : "YYYY-MM-DD HH:mm:ss",
+                        "millisecond" : "YYYY-MM-DD HH:mm:ss"
+                    }
+                }
+            }]
+        },
+        "legend" : {
+            "display" : false
+        },
+        "animation" : false,
+        "elements" : {
+            "line" : {
+                "tension" : 0
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "_comment" : "MySSD-Reader myxxxsquared https://github.com/myxxxsquared/myssd-python GPLv3 License",
+
+    "type": "pie",
+    "data": {
+        "datasets": [{
+            "data": [
+                {{written}},
+                {{100-written}}
+            ],
+            "backgroundColor":[
+                "rgb(255,99,132)",
+                "rgb(255,145,36)"
+            ]
+        }],
+        "labels": [
+            "已使用",
+            "未使用"
+        ]
+    },
+    "options":{
+        "title": {
+            "display": true,
+            "text": "写入量"
+        }
+    }
+}
