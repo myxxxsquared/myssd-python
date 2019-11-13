@@ -50,7 +50,8 @@ class MySSDReader():
             'day' : self._get_day,
             'month' : self._get_month,
             'year' : self._get_year,
-            'all' : self._get_all
+            'all' : self._get_all,
+            'week' : self._get_week
         }
 
     def get_data(self, datafrom):
@@ -70,6 +71,10 @@ class MySSDReader():
     def _get_hour(self):
         ''' 读取一个小时内的数据 '''
         return self._get_after('datetime("now", "-1 hour")')
+
+    def _get_week(self):
+        ''' 读取一周内的数据 '''
+        return self._get_after('datetime("now", "-7 day")')
 
     def _get_day(self):
         ''' 读取一天内的数据 '''

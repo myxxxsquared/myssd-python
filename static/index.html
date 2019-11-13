@@ -7,57 +7,59 @@
 -->
 
 <html>
+
 <head>
-<meta charset="utf-8" />
-<title>MySSD Reader</title>
-<link rel="stylesheet" type="text/css" href="static/index.css" />
+    <meta charset="utf-8" />
+    <title>MySSD Reader</title>
+    <link rel="stylesheet" type="text/css" href="static/index.css" />
 </head>
+
 <body>
-<div id="nav">
-    <div id="brand">MySSD Reader</div>
-    <div id="shutdown">Shutdown</div>
-    <div id="reload">Reload</div>
-</div>
-<div id="mainwrap">
-    <div id="main">
-        <div id="side">
-            <label for="data_currnet" class="datafrom">
-                <input type="radio" id="data_currnet" name="datafrom" class="datafrom" checked="checked" value="current">
-                当前情况 </label>
-            <label for="data_hour" class="datafrom">
-                <input type="radio" id="data_hour" name="datafrom" class="datafrom" value="hour">
-                最近一小时 </label>
-            <label for="data_day" class="datafrom">
-                <input type="radio" id="data_day" name="datafrom" class="datafrom" value="day">
-                最近一天 </label>
-            <label for="data_month" class="datafrom">
-                <input type="radio" id="data_month" name="datafrom" class="datafrom" value="month">
-                最近一个月 </label>
-            <label for="data_year" class="datafrom">
-                <input type="radio" id="data_year" name="datafrom" class="datafrom" value="year">
-                最近一年 </label>
-            <label for="data_all" class="datafrom">
-                <input type="radio" id="data_all" name="datafrom" class="datafrom" value="all">
-                全部数据 </label>
-            <label for="data_constum" class="datafrom" style="display: none;">
-                <input type="radio" id="data_constum" name="datafrom" class="datafrom" value="constum">
-                自定义 </label>
-        </div>
-        <div id="content">
-            <div id="maincontainer">
-                <canvas id="maincanvas"></canvas>
+    <div id="nav">
+        <div id="brand">MySSD Reader</div>
+        <div id="shutdown">Shutdown</div>
+        <div id="reload">Reload</div>
+    </div>
+    <div id="mainwrap">
+        <div id="main">
+            <div id="side">
+                <label for="data_currnet" class="datafrom">
+                    <input type="radio" id="data_currnet" name="datafrom" class="datafrom" checked="checked" value="current"> 当前情况 </label>
+                <label for="data_hour" class="datafrom">
+                    <input type="radio" id="data_hour" name="datafrom" class="datafrom" value="hour"> 最近一小时 </label>
+                <label for="data_day" class="datafrom">
+                    <input type="radio" id="data_day" name="datafrom" class="datafrom" value="day"> 最近一天 </label>
+                <label for="data_week" class="datafrom">
+                    <input type="radio" id="data_week" name="datafrom" class="datafrom" value="week"> 最近一周 </label>
+                <label for="data_month" class="datafrom">
+                    <input type="radio" id="data_month" name="datafrom" class="datafrom" value="month"> 最近一个月 </label>
+                <label for="data_year" class="datafrom">
+                    <input type="radio" id="data_year" name="datafrom" class="datafrom" value="year"> 最近一年 </label>
+                <label for="data_all" class="datafrom">
+                    <input type="radio" id="data_all" name="datafrom" class="datafrom" value="all"> 全部数据 </label>
+                <label for="data_constum" class="datafrom" style="display: none;">
+                    <input type="radio" id="data_constum" name="datafrom" class="datafrom" value="constum"> 自定义 </label>
+                <!-- <label for="data_begin">起始：<input type="date" id="data_begin" value="2017/1/1"/></label>
+            <label for="data_end">结束：<input type="date" id="data_end" value="2017/1/1"/></label> -->
             </div>
-            <div id="infor"></div>
+            <div id="content">
+                <div id="maincontainer">
+                    <canvas id="maincanvas"></canvas>
+                </div>
+                <!-- <div id="infor"></div> -->
+            </div>
         </div>
     </div>
-</div>
 
-<div id="footer">
-    <div id="footertext"> myxxxsquared <a href="https://github.com/myxxxsquared"> https://github.com/myxxxsquared </a> </div>
-</div>
-<script language="javascript" src="static/jquery-3.2.1.min.js"></script> 
-<script language="javascript" src="static/moment.min.js"></script>
-<script language="javascript" src="static/Chart.min.js"></script> 
-<script language="javascript" src="static/main.js"></script>
+    <div id="footer">
+        <div id="footertext"> myxxxsquared
+            <a href="https://github.com/myxxxsquared"> https://github.com/myxxxsquared </a>
+        </div>
+    </div>
+    <script language="javascript" src="static/jquery-3.2.1.min.js"></script>
+    <script language="javascript" src="static/moment.min.js"></script>
+    <script language="javascript" src="static/Chart.min.js"></script>
+    <script language="javascript" src="static/main.js"></script>
 </body>
+
 </html>
